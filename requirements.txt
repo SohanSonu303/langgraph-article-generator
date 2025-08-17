@@ -1,0 +1,23 @@
+# -- LangChain Core & Agents --
+langchain==0.1.20
+langchain-openai==0.1.7
+langgraph==0.0.48
+tavily-python==0.3.3
+
+# -- Data Analysis & Finance --
+# Pinned to versions compatible with Python 3.11 and each other
+# numpy<2.0 is the critical constraint to avoid build errors
+numpy==1.26.4
+pandas==2.2.2
+pandas-ta==0.3.14b0
+yfinance==0.2.37
+python-dotenv
+# -- Web Scraping & HTTP --
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# -- Other Core Dependencies (will be installed automatically) --
+# SQLAlchemy>=1.4,<3
+# aiohttp<4
+# pydantic<3,>=1
+# tenacity<9
