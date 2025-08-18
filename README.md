@@ -39,7 +39,8 @@ graph TD
     G -- "Summary is Good OR Max Revisions Reached" --> H[generate_article];
     H --> I([END]);
 
-```1.  **Get Stock Data**: Fetches 3 months of historical data for the ticker.
+```
+1.  **Get Stock Data**: Fetches 3 months of historical data for the ticker.
 2.  **Research**: Uses Tavily to find recent, relevant news articles.
 3.  **Scrape**: Scrapes the raw, unstructured text from the found URLs.
 4.  **Consolidate Data (Key Step)**: Passes the noisy scraped text to `gpt-4o-mini` with a specific prompt to extract only the essential facts, figures, and analysis, discarding all irrelevant content.
